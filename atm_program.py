@@ -31,7 +31,6 @@ while True:
              elif selectmenu == 2:
                 nominal = float(input("Masukkan nominal saldo: "))
                 verify_withdraw = input("Konfirmasi: Anda akan melakukan debet dengan nominal berikut ? y/n " + str(nominal) + " ")
-
                 if verify_withdraw == "y":
                  print("Saldo awal anda adalah: Rp. " + str(atm.checkBalance()) + "")
                 else:
@@ -56,7 +55,6 @@ while True:
                   print("pin anda salah, silakan masukkan pin: ")
                   updated_pin = int(input("Silahkan masukkan pin baru"))
                   print("pin anda berhasil diganti!")
-                
                  verify_newpin = int(input("coba masukkan pin baru: "))
                  if verify_newpin == updated_pin:
                     print("pin baru anda sukses!")
